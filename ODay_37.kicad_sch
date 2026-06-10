@@ -398,6 +398,160 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Battery_Charger:LiFePo4 20A Charger"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "U"
+				(at 0 1.524 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "LiFePo4 20A Charger"
+				(at 9.906 -0.254 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "LiFePo4 20A Charger_0_1"
+				(rectangle
+					(start 0 -1.27)
+					(end 16.51 -11.43)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "LiFePo4 20A Charger_1_1"
+				(pin input line
+					(at -2.54 -3.81 0)
+					(length 2.54)
+					(name "Line"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -2.54 -6.35 0)
+					(length 2.54)
+					(name "Neutral"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -2.54 -8.89 0)
+					(length 2.54)
+					(name "Gnd"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 19.05 -3.81 180)
+					(length 2.54)
+					(name "+"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin output line
+					(at 19.05 -8.89 180)
+					(length 2.54)
+					(name "-"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:Battery"
 			(pin_numbers
 				(hide yes)
@@ -1158,22 +1312,22 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "MES"
-				(at -3.302 1.016 0)
+			(property "Reference" "MES1"
+				(at 6.604 1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify right)
+					(justify left)
 				)
 			)
-			(property "Value" "Voltmeter_DC"
-				(at -3.302 -0.762 0)
+			(property "Value" "Battery Monitor"
+				(at 6.604 -0.762 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify right)
+					(justify left)
 				)
 			)
 			(property "Footprint" ""
@@ -1259,6 +1413,17 @@
 				)
 			)
 			(symbol "Voltmeter_DC_0_1"
+				(rectangle
+					(start -3.81 5.08)
+					(end 6.35 -5.08)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
 				(circle
 					(center 0 0)
 					(radius 2.54)
@@ -1325,6 +1490,24 @@
 						)
 					)
 					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at 5.08 7.62 270)
+					(length 2.54)
+					(name "Pwr"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1609,16 +1792,16 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U?"
-				(at 0 0 0)
+			(property "Reference" "U1"
+				(at 0 1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "Solar_Controller"
-				(at 0 -2.032 0)
+			(property "Value" "Renogy BC50D1S Solar Controller"
+				(at 0 -1.27 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -1677,6 +1860,24 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin input line
+					(at -10.16 -11.43 0)
+					(length 2.54)
+					(name "IGN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "13"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2195,10 +2396,10 @@
 		)
 		(uuid "f3887e0f-7686-43d9-b5ec-1aaa418ded5d")
 	)
-	(text_box "Lithium and AGM are isolated from each other, \na separate DC-DC charger will be needed to \ncharge AGM from Lithium or opposite. \nPotentially could setup 120VAC circuit from \ninverter on Lithium side to run battery charger, \nemergency use only."
+	(text_box "Lithium and AGM are isolated from each other, \nDC-DC Charger and Solar Controller will charge\nboth under specified conditions."
 		(exclude_from_sim no)
-		(at 125.73 66.04 0)
-		(size 50.8 13.97)
+		(at 125.73 71.12 0)
+		(size 50.8 8.89)
 		(margins 0.9525 0.9525 0.9525 0.9525)
 		(stroke
 			(width 0.0254)
@@ -2215,25 +2416,11 @@
 		)
 		(uuid "2bd9548e-a0e9-49a7-ae56-f6f95c8e5730")
 	)
-	(text_box "Possible DC-DC Converter Battery Charger"
-		(exclude_from_sim no)
-		(at 154.94 92.71 0)
-		(size 12.7 11.43)
-		(margins 0.9525 0.9525 0.9525 0.9525)
-		(stroke
-			(width 0)
-			(type solid)
-		)
-		(fill
-			(type none)
-		)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "300fe0c6-28cd-40cf-8f60-e297abd65ecc")
+	(junction
+		(at 54.61 69.85)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "05218441-287f-4e43-89e9-ddbe8b89362b")
 	)
 	(junction
 		(at 130.81 168.91)
@@ -2260,10 +2447,16 @@
 		(uuid "301635c7-d8f4-442a-801b-8919b087075f")
 	)
 	(junction
-		(at 71.12 109.22)
+		(at 223.52 118.11)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "4afd96a5-3f78-4d27-8e16-c73e51668899")
+		(uuid "53e2c7d3-3ef8-46e5-8385-a7c15ba1fc45")
+	)
+	(junction
+		(at 59.69 77.47)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "60181c30-43ae-4df0-a2ad-a679b4298b21")
 	)
 	(junction
 		(at 189.23 80.01)
@@ -2284,10 +2477,22 @@
 		(uuid "6dc83125-1a13-4e4c-8f60-bc566007d140")
 	)
 	(junction
-		(at 54.61 54.61)
+		(at 54.61 81.28)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9b877cab-f432-4b1e-96f3-61afaa57f17b")
+	)
+	(junction
+		(at 86.36 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a0369820-f0db-451b-bf1d-824d3279c8db")
+	)
+	(junction
+		(at 41.91 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ab637451-9ad0-4a0f-90db-9d8200d40a53")
 	)
 	(junction
 		(at 224.79 60.96)
@@ -2300,6 +2505,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cefef475-4e08-4ebb-a2fe-ba14c0eda35b")
+	)
+	(junction
+		(at 69.85 109.22)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "e32f5466-fa3a-4542-b110-291077327a9e")
 	)
 	(junction
 		(at 137.16 128.27)
@@ -2321,16 +2532,6 @@
 	)
 	(wire
 		(pts
-			(xy 137.16 44.45) (xy 137.16 128.27)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0786bdc1-d777-4f94-8bce-d83adf5a6246")
-	)
-	(wire
-		(pts
 			(xy 54.61 168.91) (xy 86.36 168.91)
 		)
 		(stroke
@@ -2341,7 +2542,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 54.61) (xy 54.61 54.61)
+			(xy 49.53 81.28) (xy 54.61 81.28)
 		)
 		(stroke
 			(width 0)
@@ -2351,7 +2552,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 62.23) (xy 30.48 62.23)
+			(xy 54.61 88.9) (xy 30.48 88.9)
 		)
 		(stroke
 			(width 0)
@@ -2380,15 +2581,15 @@
 		)
 		(uuid "2255b94e-9ab6-4826-9cc9-e18e81bfbcc2")
 	)
-	(polyline
+	(wire
 		(pts
-			(xy 160.02 86.36) (xy 160.02 92.71)
+			(xy 46.99 45.72) (xy 54.61 45.72)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "267cb3a8-41a6-497f-ba45-f688bf22c094")
+		(uuid "23c8373f-bab8-45df-a82c-27cc1f20dff2")
 	)
 	(wire
 		(pts
@@ -2402,16 +2603,6 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 39.37) (xy 71.12 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "29c014e7-73ea-46b1-9238-fd2b2b40a264")
-	)
-	(wire
-		(pts
 			(xy 54.61 119.38) (xy 54.61 168.91)
 		)
 		(stroke
@@ -2419,6 +2610,16 @@
 			(type default)
 		)
 		(uuid "2dde0378-58e5-4de0-90eb-946292caa58b")
+	)
+	(wire
+		(pts
+			(xy 210.82 83.82) (xy 223.52 83.82)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2e17fd71-5be1-4f4b-8bad-02530d6d340a")
 	)
 	(wire
 		(pts
@@ -2443,13 +2644,33 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 66.04) (xy 36.83 66.04)
+			(xy 69.85 109.22) (xy 214.63 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a7fb666-a2df-4437-8fac-ebdd7cdc81ba")
+	)
+	(wire
+		(pts
+			(xy 59.69 92.71) (xy 36.83 92.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "3edc9060-e147-4945-b953-5051419b4818")
+	)
+	(wire
+		(pts
+			(xy 69.85 100.33) (xy 69.85 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4638730a-df84-4934-9a60-5e52318e0bbd")
 	)
 	(wire
 		(pts
@@ -2463,6 +2684,26 @@
 	)
 	(wire
 		(pts
+			(xy 149.86 148.59) (xy 149.86 149.86)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4d395249-468f-4aa2-8516-8564a52aa4a9")
+	)
+	(wire
+		(pts
+			(xy 223.52 118.11) (xy 223.52 121.92)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "536c1cea-2755-41c1-8f6f-e227f0c3ddf1")
+	)
+	(wire
+		(pts
 			(xy 189.23 168.91) (xy 130.81 168.91)
 		)
 		(stroke
@@ -2470,6 +2711,26 @@
 			(type default)
 		)
 		(uuid "5567136a-ea1e-4a66-828a-1ec0a2bd37f0")
+	)
+	(wire
+		(pts
+			(xy 63.5 114.3) (xy 71.12 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58978ddc-dc3c-45fe-82d1-fb5301b1ac26")
+	)
+	(wire
+		(pts
+			(xy 59.69 66.04) (xy 59.69 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "58d857ef-be62-43c9-bfb7-4d12715f08e8")
 	)
 	(wire
 		(pts
@@ -2494,13 +2755,23 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 109.22) (xy 36.83 109.22)
+			(xy 44.45 109.22) (xy 41.91 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "5f68ba25-18d0-460a-9eb8-384f92a78342")
+	)
+	(wire
+		(pts
+			(xy 49.53 66.04) (xy 59.69 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "631ec725-2358-44cb-99ee-b5c996b6439e")
 	)
 	(wire
 		(pts
@@ -2515,7 +2786,17 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 157.48) (xy 142.24 160.02)
+			(xy 207.01 118.11) (xy 223.52 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68182f7e-9f07-4695-93c0-6d59bf0e0b39")
+	)
+	(wire
+		(pts
+			(xy 143.51 157.48) (xy 143.51 161.29)
 		)
 		(stroke
 			(width 0)
@@ -2545,6 +2826,16 @@
 	)
 	(wire
 		(pts
+			(xy 207.01 147.32) (xy 207.01 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a26c691-2350-4911-8aa2-b7defc5d2ddb")
+	)
+	(wire
+		(pts
 			(xy 86.36 168.91) (xy 130.81 168.91)
 		)
 		(stroke
@@ -2565,13 +2856,13 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 39.37) (xy 71.12 39.37)
+			(xy 223.52 83.82) (xy 223.52 118.11)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "756c713c-bce3-42ef-9137-22c4c123418c")
+		(uuid "7150bb89-932c-4ab6-a866-83542d033789")
 	)
 	(wire
 		(pts
@@ -2585,7 +2876,18 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 149.86) (xy 149.86 149.86)
+			(xy 63.5 40.64) (xy 46.99 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 255 1)
+		)
+		(uuid "7a6f7f7f-a3c8-4813-86e1-1498afda0594")
+	)
+	(wire
+		(pts
+			(xy 143.51 148.59) (xy 149.86 148.59)
 		)
 		(stroke
 			(width 0)
@@ -2602,6 +2904,16 @@
 			(type default)
 		)
 		(uuid "7c0daaf1-a0c9-4f1b-82a2-f70fdc5fc1c9")
+	)
+	(wire
+		(pts
+			(xy 41.91 109.22) (xy 41.91 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7cb4ffbf-3f2b-40ef-b152-d33b1aff7602")
 	)
 	(wire
 		(pts
@@ -2636,7 +2948,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 43.18) (xy 54.61 43.18)
+			(xy 49.53 69.85) (xy 54.61 69.85)
 		)
 		(stroke
 			(width 0)
@@ -2646,7 +2958,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 152.4) (xy 142.24 149.86)
+			(xy 143.51 152.4) (xy 143.51 148.59)
 		)
 		(stroke
 			(width 0)
@@ -2667,7 +2979,17 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 109.22) (xy 71.12 109.22)
+			(xy 137.16 44.45) (xy 137.16 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9a5d44dc-9bfe-4c66-aa7b-d3a6f334ea49")
+	)
+	(wire
+		(pts
+			(xy 64.77 109.22) (xy 69.85 109.22)
 		)
 		(stroke
 			(width 0)
@@ -2717,6 +3039,17 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 62.23) (xy 63.5 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+			(color 255 0 255 1)
+		)
+		(uuid "a5e72ef6-2a74-4888-84e5-b0affc28f3b3")
+	)
+	(wire
+		(pts
 			(xy 158.75 128.27) (xy 158.75 130.81)
 		)
 		(stroke
@@ -2724,6 +3057,16 @@
 			(type default)
 		)
 		(uuid "a6ff73ea-87ce-4ffe-8c1a-2a4307049a5d")
+	)
+	(wire
+		(pts
+			(xy 154.94 147.32) (xy 207.01 147.32)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b09758b8-caf3-43ba-841e-742693b154ee")
 	)
 	(wire
 		(pts
@@ -2737,7 +3080,7 @@
 	)
 	(wire
 		(pts
-			(xy 49.53 50.8) (xy 59.69 50.8)
+			(xy 49.53 77.47) (xy 59.69 77.47)
 		)
 		(stroke
 			(width 0)
@@ -2767,7 +3110,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 54.61) (xy 54.61 62.23)
+			(xy 54.61 81.28) (xy 54.61 88.9)
 		)
 		(stroke
 			(width 0)
@@ -2777,7 +3120,7 @@
 	)
 	(wire
 		(pts
-			(xy 142.24 160.02) (xy 149.86 160.02)
+			(xy 143.51 161.29) (xy 149.86 161.29)
 		)
 		(stroke
 			(width 0)
@@ -2797,23 +3140,13 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 66.04) (xy 36.83 109.22)
+			(xy 36.83 92.71) (xy 36.83 109.22)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "cc6780b4-a6d5-417f-b1da-0c361162ec25")
-	)
-	(polyline
-		(pts
-			(xy 137.16 97.79) (xy 154.94 97.79)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cc6ecb1a-c17c-4dfc-87be-15dc7ede0f13")
 	)
 	(wire
 		(pts
@@ -2837,7 +3170,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 62.23) (xy 30.48 168.91)
+			(xy 30.48 88.9) (xy 30.48 168.91)
 		)
 		(stroke
 			(width 0)
@@ -2847,23 +3180,34 @@
 	)
 	(wire
 		(pts
-			(xy 71.12 109.22) (xy 214.63 109.22)
+			(xy 86.36 62.23) (xy 63.5 62.23)
 		)
 		(stroke
 			(width 0)
 			(type default)
+			(color 255 0 255 1)
 		)
-		(uuid "d45e55e5-ddfd-49f6-a404-45ee9eeb984f")
+		(uuid "d8384e6c-e7a1-4570-8272-fbaf770e024b")
 	)
 	(wire
 		(pts
-			(xy 134.62 157.48) (xy 142.24 157.48)
+			(xy 134.62 157.48) (xy 143.51 157.48)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "d852bf39-1b2d-4e1e-89f4-af4a04c2b4a9")
+	)
+	(wire
+		(pts
+			(xy 71.12 114.3) (xy 71.12 119.38)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dba5810a-3b38-40ef-b2ab-19a753b34b7e")
 	)
 	(wire
 		(pts
@@ -2897,13 +3241,33 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 50.8) (xy 59.69 66.04)
+			(xy 149.86 161.29) (xy 149.86 160.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e390de6f-5e2a-4d2d-a2fd-6d8769f35685")
+	)
+	(wire
+		(pts
+			(xy 59.69 77.47) (xy 59.69 92.71)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "e5176d53-b667-426b-8d2f-a21a2e0c0d0c")
+	)
+	(wire
+		(pts
+			(xy 41.91 109.22) (xy 36.83 109.22)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee5b7f86-dab7-4240-940a-924e7770f7d6")
 	)
 	(wire
 		(pts
@@ -2917,7 +3281,7 @@
 	)
 	(wire
 		(pts
-			(xy 54.61 43.18) (xy 54.61 54.61)
+			(xy 54.61 69.85) (xy 54.61 81.28)
 		)
 		(stroke
 			(width 0)
@@ -2927,13 +3291,23 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 152.4) (xy 142.24 152.4)
+			(xy 134.62 152.4) (xy 143.51 152.4)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "f62c5e5d-ed33-4927-9568-7bdfb55e5fbe")
+	)
+	(wire
+		(pts
+			(xy 54.61 45.72) (xy 54.61 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f673949c-d280-4e84-a5fb-a0ff1c9b9a6f")
 	)
 	(wire
 		(pts
@@ -2955,6 +3329,16 @@
 		)
 		(uuid "fa7f3474-2840-443a-bc70-3a00953433ce")
 	)
+	(wire
+		(pts
+			(xy 41.91 100.33) (xy 69.85 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fbafdca1-1551-4688-bd36-51facffd5d42")
+	)
 	(label "Solar controller configured for Lithium battery charging"
 		(at 184.15 58.42 0)
 		(effects
@@ -2964,46 +3348,6 @@
 			(justify left bottom)
 		)
 		(uuid "2b006963-4fe6-47a3-9b7d-f437836b038d")
-	)
-	(label "Main"
-		(at 88.9 85.09 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "5ff34ad7-fb70-4190-93c6-658bd7c0e1d8")
-	)
-	(label "Aux Battery"
-		(at 137.16 125.73 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8c1bcc20-b6db-4fa8-b9a0-17a079a3d3f3")
-	)
-	(label "AGM batteries charge by alternator and battery charger only"
-		(at 68.58 125.73 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "acd20ec9-89ca-4e5f-a276-77b28546582e")
-	)
-	(label "ALT1"
-		(at 214.63 93.98 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "eccfbe55-b584-45d9-935f-a49a241105f3")
 	)
 	(symbol
 		(lib_id "Device:Battery")
@@ -3083,7 +3427,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "105edded-756f-4c07-ac35-6f6b8c27b8b1")
 		(property "Reference" "#PWR04"
 			(at 137.16 48.26 0)
@@ -3094,12 +3437,13 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+12V"
-			(at 137.16 39.37 0)
+		(property "Value" "+12V-Starting"
+			(at 131.572 38.862 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -3143,6 +3487,72 @@
 	)
 	(symbol
 		(lib_id "power:+12VA")
+		(at 71.12 119.38 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "135e8185-db87-4c00-9154-347239883e59")
+		(property "Reference" "#PWR06"
+			(at 71.12 115.57 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "Tachometer"
+			(at 71.12 124.46 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 71.12 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 71.12 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12VA\""
+			(at 71.12 119.38 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9fa92431-cc5a-4a3b-90b6-3b2ac58cbe1b")
+		)
+		(instances
+			(project "ODay_37"
+				(path "/aa33b95c-785b-4438-9437-012655b11f39"
+					(reference "#PWR06")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12VA")
 		(at 158.75 124.46 0)
 		(unit 1)
 		(exclude_from_sim no)
@@ -3160,12 +3570,13 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+12VA"
-			(at 158.75 119.38 0)
+		(property "Value" "+12V-Starting"
+			(at 161.29 123.1899 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -3412,10 +3823,79 @@
 		(pin "9"
 			(uuid "dfa818ec-89ab-4207-88e2-051275ae2afc")
 		)
+		(pin "13"
+			(uuid "ba005e26-52ec-4163-8179-12fe42bd65de")
+		)
 		(instances
 			(project ""
 				(path "/aa33b95c-785b-4438-9437-012655b11f39"
 					(reference "U1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12VA")
+		(at 223.52 121.92 0)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "3bba4caf-fcfb-4b2d-8a72-c11e68fa5171")
+		(property "Reference" "#PWR05"
+			(at 223.52 118.11 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V IGN"
+			(at 223.52 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 223.52 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 223.52 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12VA\""
+			(at 223.52 121.92 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "309e6551-b428-4b13-9cb1-b1b18934d644")
+		)
+		(instances
+			(project "ODay_37"
+				(path "/aa33b95c-785b-4438-9437-012655b11f39"
+					(reference "#PWR05")
 					(unit 1)
 				)
 			)
@@ -3726,7 +4206,7 @@
 				)
 			)
 		)
-		(property "Value" "Balmar_Dual_Output_Alternator"
+		(property "Value" "Balmar 91-100D Dual Output Alternator"
 			(at 54.61 99.06 0)
 			(effects
 				(font
@@ -3856,7 +4336,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "a9c03175-0dcb-49dd-91d2-4e56e1914794")
 		(property "Reference" "#PWR02"
 			(at 77.47 39.37 0)
@@ -3867,12 +4346,13 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "+12V"
-			(at 77.47 30.48 0)
+		(property "Value" "+12V-House"
+			(at 72.644 30.734 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
@@ -3925,7 +4405,7 @@
 		(fields_autoplaced yes)
 		(uuid "b385be96-b30c-4f73-a366-7af19be07294")
 		(property "Reference" "MES1"
-			(at 153.67 153.2254 0)
+			(at 156.464 153.67 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3934,7 +4414,7 @@
 			)
 		)
 		(property "Value" "Battery Monitor"
-			(at 153.67 155.7654 0)
+			(at 156.464 155.702 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3975,6 +4455,9 @@
 		(pin "2"
 			(uuid "804c8786-d5b3-4588-b76e-960b4334163f")
 		)
+		(pin "3"
+			(uuid "75ebfe62-a094-4068-a0e3-1b5310434152")
+		)
 		(instances
 			(project ""
 				(path "/aa33b95c-785b-4438-9437-012655b11f39"
@@ -3985,25 +4468,25 @@
 		)
 	)
 	(symbol
-		(lib_id "Battery_Charger:Dual_10A_Battery_Charger")
-		(at 36.83 33.02 0)
+		(lib_id "Battery_Charger:LiFePo4 20A Charger")
+		(at 27.94 36.83 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "f07c6d3a-f8e8-4991-8cff-62ac5b6c609e")
-		(property "Reference" "U2"
-			(at 36.83 31.75 0)
+		(uuid "e066527d-6322-4cd9-8d53-ed5401403757")
+		(property "Reference" "U3"
+			(at 36.195 33.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "Dual_10A_Battery_Charger"
-			(at 36.83 34.29 0)
+		(property "Value" "LiFePo4 20A Charger"
+			(at 36.195 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4011,7 +4494,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 36.83 33.02 0)
+			(at 27.94 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4020,7 +4503,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 36.83 33.02 0)
+			(at 27.94 36.83 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4029,7 +4512,84 @@
 			)
 		)
 		(property "Description" ""
-			(at 36.83 33.02 0)
+			(at 27.94 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "8472a816-fc0a-48ec-adc3-48a793afbb50")
+		)
+		(pin "1"
+			(uuid "79843f42-2f67-4b13-abd9-0085e83947c3")
+		)
+		(pin "2"
+			(uuid "d376a987-d090-4595-8d87-0222a261ecff")
+		)
+		(pin "3"
+			(uuid "461de3cf-45d2-41df-af8d-2aeb2e855b76")
+		)
+		(pin "4"
+			(uuid "7da09c17-bb53-402c-a295-1eeb86d62b2d")
+		)
+		(instances
+			(project ""
+				(path "/aa33b95c-785b-4438-9437-012655b11f39"
+					(reference "U3")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Battery_Charger:Dual_10A_Battery_Charger")
+		(at 36.83 59.69 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f07c6d3a-f8e8-4991-8cff-62ac5b6c609e")
+		(property "Reference" "U2"
+			(at 36.83 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Dual_10A_Battery_Charger"
+			(at 36.83 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 36.83 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.83 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 36.83 59.69 0)
 			(effects
 				(font
 					(size 1.27 1.27)
